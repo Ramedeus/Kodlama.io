@@ -6,15 +6,17 @@ public class Main {
 		Product product = new Product();
 		ProductManager productManager=new ProductManager();
 		
-		product.id=1;
-		product.name="Laptop";
-		product.description="Asus Laptop";
-		product.price=5000;
-		product.stockAmount=3;
+		product.setId(1);
+		product.setName("Laptop");
+		product.setDescription("Asus Laptop");
+		product.setPrice(5000);
+		product.setStockAmount(3);
 		
-		System.out.println(product.name);
-		
+		System.out.println(product.getName());
+				
 		productManager.add(product);
+		
+		System.out.println(product.getCode());
 		
 	}
 
