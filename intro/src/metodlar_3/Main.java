@@ -8,7 +8,7 @@ public class Main {
 		System.out.println(yeniMesaj);
 		int sayi = topla(10, 5);
 		System.out.println(sayi);
-		System.out.println(topla2(1,2,3,4));
+		System.out.println(topla2(1, 2, 3, 4));
 	}
 
 	public static void ekle() {
@@ -27,21 +27,18 @@ public class Main {
 		return x + y;
 	}
 
-	public static int topla2(int...sayilar) {
-		int toplam=0;
-		
+	public static int topla2(int... sayilar) {
+		int toplam = 0;
+
 		for (int sayi : sayilar) {
-			toplam+=sayi;
+			toplam += sayi;
 		}
-		
+
 		return toplam;
 	}
-	
-	
+
 	public static String sehirVer() {
 		return "Ankara";
 	}
-	
-	
 
 }
