@@ -1,6 +1,26 @@
 package classesWithAttributes;
 
 public class Product {
+
+	
+	public Product(int id,String name,String description,double price,int stockAmount,String color) {
+		this.id=id;
+		this.name=name;
+		this.description=description;
+		this.price=price;
+		this.stockAmount=stockAmount;
+		this.color=color;
+		System.out.println("Yapıcı metot 1 çalıştı.");
+	}
+	
+	
+	
+	/*
+	 * public Product() { System.out.println("Yapıcı metot 2 çalıştı.");
+	 * 
+	 * }
+	 */
+		
 	private int id;
 	private String name;
 	private String description;
@@ -8,6 +28,8 @@ public class Product {
 	private int stockAmount;
 	private String color;
 	private String code;
+
+	
 
 	public int getId() {
 		return id;
@@ -58,9 +80,7 @@ public class Product {
 	}
 
 	public String getCode() {
-		return this.name.substring(0,1)+id;
+		return this.name.substring(0, 1) + id;
 	}
-
-	
 
 }
