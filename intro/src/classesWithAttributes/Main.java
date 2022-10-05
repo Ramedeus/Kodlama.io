@@ -14,7 +14,7 @@ public class Main {
 		
 		System.out.println(product.getName());
 				
-		productManager.add(product);
+		//productManager.add(product);
 		
 		System.out.println(product.getCode());
 		
